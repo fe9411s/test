@@ -14,4 +14,8 @@ D
 C
 N
 this is the new file
+<<<<<<< HEAD
 this is also a test file 
+=======
+hello this is the new firk [ldc,dlc}
+>>>>>>> c1fbde48f4c5ebccdacb98d1c59d7773804b255c
