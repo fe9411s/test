@@ -1,0 +1,31 @@
+import hudson.model.*
+import hudson.maven.*
+import hudson.tasks.*
+
+def newJvmOptions="-Xshare:auto -Xms64m -Xmx512m -XX:MaxPermSize=256M"
+
+// For each project
+for(item in Hudson.instance.items) {
+  if(item instanceof FreeStyleProject) {
+    println("JOB : "+item.name);
+    // Find current recipients defined in project
+    println(">FREESTYLE PROJECT");
+    for (builder in item.builders){
+      println(">> "+builder);
+      if (builder instanceof Maven) {
+        println(">>MAVEN BUILDER");
+        println(">>TARGETS : "+builder.targets);
+        println(">>NAME : "+builder.mavenName);
+        println(">>POM : "+builder.pom);
+        // .properties is overridden by groovy
+        println(">>PROPERTIES : "+builder.@properties);
+        println(">>JVM-OPTIONS : "+builder.jvmOptions);
+        println(">>USE PRIVATE REPO : "+builder.usePrivateRepository);
+        def newBuilder = new Maven(builder.targets,builder.mavenName,builder.pom,builder.@properties,newJvmOptions,builder.usePrivateRepository);
+        item.buildersList.replace(newBuilder);
+      }
+    }
+    println("\n=======\n");
+  }
+}
+
