@@ -3,7 +3,7 @@ import hudson.maven.*
 import hudson.tasks.*
 
 def newJvmOptions="-Xshare:auto -Xms64m -Xmx512m -XX:MaxPermSize=256M"
-
+//****//
 // For each project
 for(item in Hudson.instance.items) {
   if(item instanceof FreeStyleProject) {
