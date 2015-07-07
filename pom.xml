@@ -13,8 +13,8 @@ xmlns="http://maven.apache.org/POM/4.0.0"
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
-      <groupId>jun</groupId>
-      <artifactId>jun-release</artifactId>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
