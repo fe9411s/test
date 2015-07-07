@@ -291,16 +291,21 @@
 <uploadArchive>
  <distributionManagement>
 		<repository>
-			<id>archiva.internal</id>
-			<name>Internal Release Repository</name>
+			<id>jun</id>
+			<name>jun-release</name>
 			<url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
 		</repository>
 		<snapshotRepository>
-			<id>archiva.snapshots</id>
-			<name>Internal Snapshot Repository</name>
+			<id>jun</id>
+			<name>jun-release</name>
 			<url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
 		</snapshotRepository>
 	</distributionManagement>
+<distributionManagement>
+  <repository>
+    <id>jun</id>
+    <url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
+  </repository>
+</distributionManagement>
+</uploadArchive>
 </project>
-
-
