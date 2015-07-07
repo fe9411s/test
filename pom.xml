@@ -20,13 +20,13 @@ xmlns="http://maven.apache.org/POM/4.0.0"
     </dependency>
   </dependencies>
 
-<uploadArchives>
+
 <distributionManagement>
 <repository>
     <id>jun</id>
     <url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
   </repository>
 </distributionManagement>
-</uploadArchives>
+
 
 </project>
