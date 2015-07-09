@@ -20,7 +20,7 @@ xmlns="http://maven.apache.org/POM/4.0.0"
     </dependency>
   </dependencies>
 
-
+<uploadArchive>
 <distributionManagement>
 <repository>
     <id>jun</id>
@@ -28,5 +28,5 @@ xmlns="http://maven.apache.org/POM/4.0.0"
   </repository>
 </distributionManagement>
 
-
+<uploadArchive>
 </project>
