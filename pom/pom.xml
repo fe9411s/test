@@ -292,12 +292,12 @@
  <distributionManagement>
 		<repository>
 			<id>jun</id>
-			<name>jun</name>
+			<name>jun-release</name>
 			<url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
 		</repository>
 		<snapshotRepository>
 			<id>jun</id>
-			<name>jun</name>
+			<name>jun-release</name>
 			<url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
 		</snapshotRepository>
 	</distributionManagement>
@@ -307,4 +307,5 @@
     <url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
   </repository>
 </distributionManagement>
+
 </project>
