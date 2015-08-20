@@ -9,19 +9,7 @@ xmlns="http://maven.apache.org/POM/4.0.0"
   <artifactId>NumberGenerator</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>junaid</name>
- <description>test project junaid</description>
-<modules>
-	<module>jun-test</module>
-</modules>
-<distridutionManagement>
-</distridutionManagement>
-
-
-  <id>internal.repo</id>
-  <name>Temporary Staging Repository</name>
-  
-
+  <name>NumberGenerator</name>
   <url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
   <dependencies>
     <dependency>
@@ -38,9 +26,9 @@ xmlns="http://maven.apache.org/POM/4.0.0"
     <url>http://127.0.0.1:8081/nexus/content/repositories/jun</url>
   </repository>
 </distributionManagement>
+
+
 </project>
-
-
 
 
 
